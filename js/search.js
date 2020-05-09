@@ -1,0 +1,38 @@
+var search_zh_cn = {
+	"web":[
+		{"name":"百度","url":"https://www.baidu.com/s?wd="},
+		{"name":"谷歌","url":"https://www.google.com/search?q="},
+		{"name":"必应","url":"https://www.bing.com/search?mkt=zh-cn&q="},
+		{"name":"维基","url":"https://zh.wikipedia.org/zh-cn/Special:搜索?search="}
+	],
+	"music":[
+		{"name":"百度","url":"http://music.baidu.com/search?key="},
+		{"name":"搜狗","url":"https://mp3.sogou.com/music.so?query="},
+		{"name":"360","url":"http://s.music.so.com/s?q="}
+	],
+	"image":[
+		{"name":"百度","url":"https://image.baidu.com/i?ie=utf-8&ct=201326592&lm=-1&word="},
+		{"name":"谷歌","url":"https://www.google.com/search?tbm=isch&q="},
+		{"name":"必应","url":"https://cn.bing.com/images/search?q="}
+	],
+	"news":[
+		{"name":"百度","url":"https://news.baidu.com/ns?cl=2&rn=20&ct=1&ie=utf-8&word="},
+		{"name":"谷歌","url":"https://www.google.com/search?gl=us&tbm=nws&btnmeta_news_search=1&aq=f&aqi=&aql=&gs_sm=e&q="},
+		{"name":"必应","url":"https://cn.bing.com/news/search?q="}
+	],
+	"video":[
+		{"name":"搜库","url":"https://www.soku.com/v?keyword="},
+		{"name":"百度","url":"https://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=6&ie=utf-8&word="},
+		{"name":"youtube","url":"https://www.youtube.com/results?search_query="},
+		{"name":"必应","url":"https://cn.bing.com/videos/search?q="}
+	],
+	"map":[
+		{"name":"百度","url":"https://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D"},
+		{"name":"谷歌","url":"https://ditu.google.cn/maps?hl=zh-CN&newwindow=1&um=1&ie=UTF-8&sa=N&tab=vl&q="},
+		{"name":"必应","url":"https://cn.bing.com/ditu/?q="}
+	],
+	"forum":[
+		{"name":"贴吧","url":"http://tieba.baidu.com/f/search/res?ie=utf-8&qw="},
+		{"name":"卡饭","url":"http://www.baidu.com/s?wd=site:bbs.kafan.cn "}
+	]
+}

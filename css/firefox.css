@@ -1,0 +1,85 @@
+body {
+    overflow:auto;
+    background-color: #EDEDED;
+    background-image: url(https://bing.minggo.eu.org/);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family:'Microsoft YaHei';
+    font-size: 62.5%;
+}
+
+/*设置导航整体面板*/
+#navs {
+    position:relative;
+    top: 25em;
+    width:1093px;
+    margin:auto;
+    padding: 0.6em;
+    background-color: #000;
+    opacity:0.65;
+    border:0.1em solid #000;
+}
+#navs span{
+    font-weight: bold;
+    color:white;
+    border-bottom: 0.1em solid #555;
+}
+#navs table{
+  font-size:1.7em;
+  font-weight: bold;
+}
+#navs table th{
+  text-align:left;
+  top:0.5em;
+  color:gray;
+}
+#navs table td a{
+    color:#FFF;
+}
+#navs table td a:hover,#Y_nav a:hover {
+    text-decoration: none;
+    transition:color 0.423s ease, text-shadow 0.423s ease;
+    color:rgba(255, 200, 0, 0.9);
+    text-shadow:0 1px rgba(242, 33, 49, 1), 0 1px 1px rgba(242, 33, 49, 1), 0 -1px 1px rgba(242, 33, 49, 1), 1px 0 1px rgba(242, 33, 49, 1), -1px 0 1px rgba(242, 33, 49, 1), 0 0 3px rgba(242, 33, 49, 1);
+}
+#navs table .download a{
+	display:block;
+	padding:10px 10px 10px 45px;
+	background-position:0 50%;
+	background-repeat:no-repeat;
+	background-image:url(../img/download-icons.png)
+}
+
+#navs table .download.win64 a{
+	background-position:-300px 50%
+}
+
+#navs table .download.linux a{
+	background-position:-600px 50%
+}
+
+#navs table .download.linux64 a{
+	background-position:-900px 50%
+}
+
+#navs table .download.mac a{
+	background-position:-1200px 50%
+}
+#navs table .android a{
+	display:block;
+	padding:10px 10px 10px 45px;
+	background-position:7px 50%;
+	background-repeat:no-repeat;
+}
+#navs table .android.re a{
+	background-image:url(../img/R.png)
+}
+#navs table .android.be a{
+	background-image:url(../img/B.png)
+}
+#navs table .android.au a{
+	background-image:url(../img/A.png)
+}
+#navs table .android.ni a{
+	background-image:url(../img/N.png)
+}

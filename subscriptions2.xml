@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subscriptions>
+  <subscription title="【国内】coding源" specialization="中文" homepage="https://adf.minggo.eu.org" type="ads" prefixes="zh">
+    <variants>
+      <variant title="My AdFilters" url="https://dev.tencent.com/u/HalfLife/p/list/git/raw/master/ad.txt"/>
+      <variant title="CJX's AdFilters" url="https://dev.tencent.com/u/HalfLife/p/list/git/raw/master/ad2.txt"/>
+      <variant title="AdFilters" url="https://dev.tencent.com/u/HalfLife/p/list/git/raw/master/ad3.txt"/>
+      <variant title="[proxy]GFWList" url="https://dev.tencent.com/u/HalfLife/p/list/git/raw/master/gfwlist.txt"/>
+    </variants>
+  </subscription>
+  <subscription title="【国内】OSC源" specialization="中文" homepage="https://adf.minggo.eu.org" type="ads" prefixes="zh">
+    <variants>
+      <variant title="My AdFilters" url="https://gitee.com/halflife/list/raw/master/ad.txt"/>
+      <variant title="CJX's AdFilters" url="https://gitee.com/halflife/list/raw/master/ad2.txt"/>
+      <variant title="AdFilters" url="https://gitee.com/halflife/list/raw/master/ad3.txt"/>
+      <variant title="[proxy]GFWList" url="https://gitee.com/halflife/list/raw/master/gfwlist.txt"/>
+    </variants>
+  </subscription>
+  <subscription title="【国外】github源" specialization="中文" homepage="https://adf.minggo.eu.org" type="ads" prefixes="zh">
+    <variants>
+      <variant title="My AdFilters" url="https://raw.githubusercontent.com/523860169/list/master/ad.txt"/>
+      <variant title="CJX's AdFilters" url="https://raw.githubusercontent.com/523860169/list/master/ad2.txt"/>
+      <variant title="AdFilters" url="https://raw.githubusercontent.com/523860169/list/master/ad3.txt"/>
+      <variant title="[proxy]GFWList" url="https://raw.githubusercontent.com/523860169/list/master/gfwlist.txt"/>
+    </variants>
+  </subscription>
+</subscriptions>

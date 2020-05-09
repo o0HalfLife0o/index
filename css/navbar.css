@@ -1,0 +1,38 @@
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    a {
+    text-decoration: none;
+}
+.nav {
+    position: relative;
+    margin: 0 auto;
+    width: 450px;
+    font: 14px/1.5 '微软雅黑';
+    opacity:0.65;
+}
+.block {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-radius: 4px;
+    background-color: #f00;
+}
+.nav-list {
+    position: relative;
+    z-index: 10;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.nav-list .item {
+    float: left;
+    padding: 15px 20px;
+}
+.nav-list .item a {
+    color: #fff;
+}
