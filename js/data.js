@@ -28,7 +28,7 @@ var Config = getMStr(function(){
 	YouTube, https://www.youtube.com/, img/web/ytb.png
 应用
 	Dreamcast, http://dreamcast2.ys168.com/, img/web/ys168.png
-	ED2000, https://www.ed2000.com/, img/web/ed2000.ico
+	ED2000, https://www.ed2000k.com/, img/web/ed2000.ico
 	谷歌翻译, https://translate.google.cn, img/web/translate.jpg
 	百度地图, https://map.baidu.com/, img/web/maps.ico
 	百度网盘, https://pan.baidu.com/, img/web/pan.ico
