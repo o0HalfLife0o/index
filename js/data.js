@@ -17,7 +17,7 @@ var Config = getMStr(function(){
 娱乐
 	哔哩哔哩, https://www.bilibili.com/, img/web/bilibili.ico
 	看看屋, https://www.kankanwu.com/, img/web/kankanwu.ico
-	TV6, https://www.tv6.com/, img/web/tv6.ico
+	奈菲影视, https://www.nfmovies.com/, img/web/nfmovies.ico
 	低端影视, https://ddrk.me/, img/web/ddrk.png
 	BL解析, https://vip.bljiex.com/, img/web/bljiex.ico
 资源
