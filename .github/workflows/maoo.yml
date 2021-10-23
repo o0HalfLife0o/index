@@ -44,7 +44,7 @@ jobs:
           git add --all
           git commit -m "Sync maoo.json and jar"
           git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-          git remote set-url --add origin "https://${{ secrets.GITEE_ACCOUNT }}:${{ secrets.GITEE_PASSWORD }}@gitee.com/${{ secrets.GITEE_NAME }}/index.git"
-          git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/${{ secrets.CODING_NAME }}/index.git"
+          git remote set-url --add origin "https://${{ secrets.GITEE_ACCOUNT }}@gitee.com/${{ secrets.GITEE_NAME }}/index.git"
+          git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}@e.coding.net/${{ secrets.CODING_NAME }}/index.git"
           git fetch --unshallow origin
           git push -f -u origin master
