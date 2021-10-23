@@ -22,7 +22,7 @@ jobs:
           spiders=$(grep '"spider"' maoo.json |cut -d\" -f4)
           for s in $spiders; do
             filename=$(echo $s | grep -o '[a-z0-9A-Z?=._-]\+$' |cut -d? -f1)
-            link="https://ming92.cf/rule/"
+            link="http://ming92.cf/rule/"
             sed -i "s#$s#$link$filename#" maoo.json
             curl -sL $s -o $filename
           done
