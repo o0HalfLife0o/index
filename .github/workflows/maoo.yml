@@ -35,6 +35,7 @@ jobs:
             echo "::set-output name=status::success"
           fi
       - name: Git push assets to "master" branch
+        continue-on-error: true
         if: steps.diffResult.outputs.status == 'success'
         run: |
           sed -i '/url =/d' ./.git/config
