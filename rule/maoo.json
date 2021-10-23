@@ -23,6 +23,7 @@
 {"key":"csp_xpath_duboku","name":"@独播库(XPath)","type": 3,"api":"csp_XPath","searchable": 1,"quickSearch": 1,"filterable": 0,"ext":"https://cdn.jsdelivr.net/gh/lite-cucumber/CatVodTVSpider@master/xpath/duboku.json"},
 {"key":"csp_xpath_saohuotv","name":"@骚火电影(XPath)","type": 3,"api":"csp_XPath","searchable": 1,"quickSearch": 1,"filterable": 0,"ext":"https://cdn.jsdelivr.net/gh/lite-cucumber/CatVodTVSpider@master/xpath/saohuotv2.json"},
 {"key":"csp_xpath_dm84","name":"@动漫巴士(XPath)","type": 3,"api":"csp_XPath","searchable": 1,"quickSearch": 1,"filterable": 0,"ext":"https://cdn.jsdelivr.net/gh/lite-cucumber/CatVodTVSpider@master/xpath/dm84.json"},
+{"key":"csp_xpath_egg","name":"@蛋蛋影院(XPath)","type":3,"api":"csp_XPathEgg","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/lite-cucumber/CatVodTVSpider@master/xpath/egg.json"},
 {"key": "OmoFun动漫","name": "OmoFun动漫","type": 1,"api": "https://www.omofun.com/api.php/provide/vod/","playUrl":"","categories":["动漫","剧场版","国产","欧美"]},
 {"key": "w7tv","name": "w7tv","type": 1,"api": "http://w7tv.com/api.php/provide/vod/","playUrl":"","categories": []},
 {"key": "小蜻蜓APP","name": "小蜻蜓APP","type": 1,"api": "http://3ketv.com/api.php/provide/vod/","playUrl":"","categories": []},
