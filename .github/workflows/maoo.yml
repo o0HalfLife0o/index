@@ -1,0 +1,49 @@
+name: Sync maoo.json and spider
+on:
+  schedule:
+    - cron: 0 * * * *
+  push:
+    branches:
+      - "master"
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the "master" branch
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Sync maoo.json and jar
+        run: |
+          mkdir -p new/
+          cd new
+          curl -sLO https://raw.githubusercontent.com/YuanHsing/freed/master/maoo.json
+          spiders=$(grep '"spider"' maoo.json |cut -d\" -f4)
+          for s in $spiders; do
+            filename=$(echo $s | grep -o '[a-z0-9A-Z?=._-]\+$' |cut -d? -f1)
+            link="https://ming92.cf/rule/"
+            sed -i "s#$s#$link$filename#" maoo.json
+            curl -sL $s -o $filename
+          done
+      - name: Diff files
+        id: diffResult
+        run: |
+          if diff -q new/ rule/; then
+            rm -rf rule/
+            mv -f new/ rule/
+            echo "::set-output name=status::success"
+          fi
+      - name: Git push assets to "master" branch
+        if: steps.diffResult.outputs.status == 'success'
+        run: |
+          sed -i '/url =/d' ./.git/config
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
+          git add --all
+          git commit -m "Sync maoo.json and jar"
+          git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git remote set-url --add origin "https://${{ secrets.GITEE_ACCOUNT }}:${{ secrets.GITEE_PASSWORD }}@gitee.com/${{ secrets.GITEE_NAME }}/index.git"
+          git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/${{ secrets.CODING_NAME }}/index.git"
+          git fetch --unshallow origin
+          git push -f -u origin master
