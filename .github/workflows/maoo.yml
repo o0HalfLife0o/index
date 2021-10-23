@@ -29,10 +29,9 @@ jobs:
       - name: Diff files
         id: diffResult
         run: |
-          if diff -q new/ rule/; then
+          if ! diff -q new/ rule/; then
             rm -rf rule/
             mv -f new/ rule/
-            echo "diffresult"
             echo "::set-output name=status::success"
           fi
       - name: Git push assets to "master" branch
