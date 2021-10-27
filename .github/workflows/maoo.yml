@@ -21,10 +21,12 @@ jobs:
           curl -sLO https://raw.githubusercontent.com/YuanHsing/freed/master/maoo.json
           spiders=$(grep '"spider"' maoo.json |cut -d\" -f4)
           for s in $spiders; do
-            filename=$(echo $s | grep -o '[a-z0-9A-Z?=._-]\+$' |cut -d? -f1)
+            filename=$(echo $s | grep -o '[a-z0-9A-Z?=;._-]\+$' |cut -d? -f1)
+            spider=$(echo $s |cut -d\; -f1)
+            curl -sL $spider -o $filename
+            md5sum=$(md5sum $filename |cut -d\  -f1)
             link="http://ming92.cf/rule/"
-            sed -i "s#$s#$link$filename#" maoo.json
-            curl -sL $s -o $filename
+            sed -i "s#$s#$link$filename;md5;$md5sum#" maoo.json
           done
       - name: Diff files
         id: diffResult
