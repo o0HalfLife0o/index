@@ -1,5 +1,5 @@
 {
-"spider":"http://ming92.cf/rule/custom_spider.jar;md5;d595a93eef39cb3458b89294c9266641",
+"spider":"http://ming92.cf/rule/custom_spider.jar;md5;864624c14c61f062ce6e079e0f68c9a8",
 "sites":[
 {"key":"csp_Aidi","name":"@爱迪","type":3,"api":"csp_Aidi","searchable":1,"quickSearch":0,"filterable":1},
 {"key":"csp_Enlienli","name":"@嗯哩嗯哩","type":3,"api":"csp_Enlienli","searchable":1,"quickSearch":0,"filterable":1},
