@@ -41,6 +41,7 @@
 {"key":"csp_xpath_axx","name":"@爱西西(XPath)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/Tangsan99999/Public@main/xpath/aixixi.json"},
 {"key":"csp_xpath_fantuan","name":"@饭团(XPath)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/Tangsan99999/Public@main/xpath/fantuan.json"},
 {"key":"csp_xpath_dd520","name":"@多多(XPath)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/Tangsan99999/Public@main/xpath/dd520.json"},
+{"key":"csp_xpath_1010dy","name":"@1010dy(XPath)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/Tangsan99999/Public@main/xpath/1010dy.json"},
 {"key":"csp_xpath_lranc","name":"@天天影视(XPath)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/lranc.json"},
 {"key":"↓↓（2021.11.14by小黄瓜）↓↓","name":"↓↓M浏览器中APP影视规则支持（测试版）支持筛选，接口太多，建议自测，哪个能用用哪个↓↓","type":0,"api":"","playUrl":"","categories":[],"searchable":0,"quickSearch":0},
 {"key":"csp_appys_xiaogui_007影视","name":"007影视(M)","type":3,"api":"csp_AppYs","searchable":1,"quickSearch":0,"filterable":1,"ext":"xiaogui_007影视"},
@@ -361,7 +362,7 @@
 {"name":"娱乐","url":"https://vip.anje.cn/?url="},
 {"name":"安逸","url":"http://www.mgtv.com.wchulian.com.cn/player/analysis.php?v="},
 {"name":"云云","url":"http://159.75.133.231:81/jiexi/?url="},
-{"name":"啊茹竹嘎","url":"http://k.auuyruyc.com/player/?url="},
+{"name":"啊茹.竹嘎","url":"http://k.auuyruyc.com/player/?url="},
 {"name":"初心","url":"https://player.5znn.pro/jiexi.php?url="},
 {"name":"叻簇","url":"https://lecurl.cn/?url="},
 {"name":"段友.日批","url":"https://jx.ns360.cn/1080/jiexi/?url="},
@@ -484,10 +485,9 @@
 {"name":"优惠福利购","url":"http://www.youhuifuligou.com/json/?id=1&url="},
 {"name":"云海","url":"https://dd.mouliuk.com/home/api?type=ys&uid=12293&key=acfhkovxzDEIMPWX29&url="},
 {"name":"盘古json","url":"https://json.pangujiexi.com:12345/json.php?url="},
+{"name":"Json.VodJX","type":1,"url":"https://www.vodjx.top/api/?key=XSQzk8KFK1I7FfPK5X&url="},
 {"name":"荣耀","type":1,"url":"https://jiexi.bdjxfw.com/home/api?type=ys&uid=226493678&key=bgmnouzCEHIKLMST29&url="},
 {"name":"人人迷","type":1,"url":"https://svip.renrenmi.cc:2222/api/?key=nn4j8rukPXSVzR78E9&url="},
-{"name":"萌新","type":1,"url":"https://vip.mengx.vip/home/api?type=ys&uid=18613&key=bknprsxCILRTUVYZ79&url="},
-{"name":"萌欣","type":1,"url":"http://vip.mengx.vip/home/api?type=ys&uid=3249696&key=aefqrtuwxyEFHKNOQY&url="},
 {"name":"百度","type":1,"url":"https://jiexi.bdjxfw.com/home/api?type=ys&uid=168882504&key=adfhjknyzACDFJOQU9&url="},
 {"name":"百度解析","type":1,"url":"https://bdjx.shoujick.com/json1231/?url="},
 {"name":"瞄派对","type":1,"url":"https://api.jiexi.one/api/?key=Sv5qJ05C6Oy62kCnEc&url="},
@@ -496,7 +496,9 @@
 {"name":"泡泡堂","type":1,"url":"https://api.shengqiankuaitao.cn/api/?key=I7iOCx9465knkzUo5H&url="},
 {"name":"app影视工厂","type":1,"url":"https://jiexi.ysgc.xyz/home/api?type=ys&uid=29893&key=hkptuvxyACFHJRY078&url="},
 {"name":"扶风","type":1,"url":"https://vip.byteamone.cn/api/?key=vpO0packXeAp4XYCnA&url="},
-{"name":"追剧达人3","type":1,"url":"http://jx.vipmv.co/json3/?url="}
+{"name":"追剧达人3","type":1,"url":"http://jx.vipmv.co/json3/?url="},
+{"name":"萌新","type":1,"url":"https://vip.mengx.vip/home/api?type=ys&uid=18613&key=bknprsxCILRTUVYZ79&url="},
+{"name":"萌欣","type":1,"url":"http://vip.mengx.vip/home/api?type=ys&uid=3249696&key=aefqrtuwxyEFHKNOQY&url="}
 ],
 "flags":[
 "youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu","bilibili"
