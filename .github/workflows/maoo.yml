@@ -20,7 +20,7 @@ jobs:
           cd new
           curl -sLO https://raw.githubusercontent.com/YuanHsing/freed/master/maoo.json
           curl -sLO https://raw.githubusercontent.com/YuanHsing/freed/master/maoo2.json
-          spiders=$(grep '"spider"' maoo.json |cut -d\" -f4)
+          spiders=$(grep '"spider"' maoo.json |cut -d\" -f4 |cut -d\; -f1)
           for s in $spiders; do
             filename=$(echo $s | grep -o '[a-z0-9A-Z?=;._-]\+$' |cut -d? -f1)
             spider=$(echo $s |cut -d\; -f1)
