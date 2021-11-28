@@ -1,5 +1,5 @@
 {
-"spider": "http://ming92.cf/rule/main_spider.txt;md5;c1628d87108616e40b1cd4cac17cbf8a",
+"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;c1628d87108616e40b1cd4cac17cbf8a",
 "sites":[
 {"key":"↓↓（维护源）↓↓","name":"↓↓小黄瓜大佬维护源↓↓","api":"","playUrl":"","categories":[],"searchable":0,"quickSearch":0},
 {"key":"rrm_spider","name":"人人迷(免解)","type":3,"api":"csp_Rrm","searchable":1,"quickSearch":1,"filterable":0,"ext":"B9C8093A210EADA1"},
