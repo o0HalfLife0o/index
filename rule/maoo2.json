@@ -1,5 +1,6 @@
 {
-"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;56e76df3b01f1a43e1ca9cbf19afa102",
+//"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;56e76df3b01f1a43e1ca9cbf19afa102",
+"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/custom_spider.txt;md5;954ac912d53598448fc0b4c86a5cd220",
 "sites":[
 {"key":"rrm_spider","name":"人人迷(免解)","type":3,"api":"csp_Rrm","searchable":1,"quickSearch":1,"filterable":0,"ext":"B9C8093A210EADA1"},
 {"key":"2345_spider","name":"2345影视(官源)","type":3,"api":"csp_YS2345","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/2345.json"},
@@ -51,7 +52,7 @@
 {"key":"csp_xpath_1090ys2","name":"1090影视(XPMac)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/1090ys2.json"},
 
 {"key":"↓↓（2021.11.29by小黄瓜）↓↓","name":"↓↓M浏览器中APP影视规则支持（测试版）支持筛选，接口太多，建议自测，哪个能用用哪个↓↓","api":"","playUrl":"","categories":[],"searchable":0,"quickSearch":0},
-{"key":"csp_appys_xiaogui_007影视","name":"007影视(M)","type":3,"api":"csp_AppYs","searchable":1,"quickSearch":0,"filterable":1,"ext":"xiaogui_007影视"},
+//{"key":"csp_appys_xiaogui_007影视","name":"007影视(M)","type":3,"api":"csp_AppYs","searchable":1,"quickSearch":0,"filterable":1,"ext":"xiaogui_007影视"},
 {"key":"csp_appys_xiaogui_5060影院","name":"5060影院(M)","type":3,"api":"csp_AppYs","searchable":1,"quickSearch":0,"filterable":1,"ext":"xiaogui_5060影院"},
 {"key":"csp_appys_xiaogui_913e影视","name":"913e影视(M)","type":3,"api":"csp_AppYs","searchable":1,"quickSearch":0,"filterable":1,"ext":"xiaogui_913e影视"},
 {"key":"csp_appys_xiaogui_F7影视","name":"F7影视(M)","type":3,"api":"csp_AppYs","searchable":1,"quickSearch":0,"filterable":1,"ext":"xiaogui_F7影视"},
