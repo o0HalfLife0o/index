@@ -1,5 +1,5 @@
 {
-//"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;e616f31fa449a46e23f66ce089851525",
+//"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;3eeac52044404155e3f54601da3a5d43",
 "spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/custom_spider.txt;md5;954ac912d53598448fc0b4c86a5cd220",
 "sites":[
 {"key":"rrm_spider","name":"人人迷(免解)","type":3,"api":"csp_Rrm","searchable":1,"quickSearch":1,"filterable":0,"ext":"B9C8093A210EADA1"},
