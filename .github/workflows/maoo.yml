@@ -52,4 +52,4 @@ jobs:
           git remote set-url --add origin "https://${{ secrets.GITEE_ACCOUNT }}@gitee.com/${{ secrets.GITEE_NAME }}/index.git"
           git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}@e.coding.net/${{ secrets.CODING_NAME }}/index.git"
           git fetch --unshallow origin
-          git push -f -u origin master
+          git push -u origin master
