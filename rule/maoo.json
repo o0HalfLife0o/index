@@ -1,5 +1,5 @@
 {
-"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;f76ac9d9edb05a8bc5c6abd79317b31a",
+"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;a4ab3bf7248e5a1b87cd1bbc6f74d6be",
 "sites":[
 {"key":"2345_spider","name":"2345影视(官源)","type":3,"api":"csp_YS2345","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/2345.json"},
 {"key":"sogou_spider","name":"搜狗影视(官源)","type":3,"api":"csp_YSSogou","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/sogou.json"},
