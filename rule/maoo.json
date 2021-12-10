@@ -1,5 +1,5 @@
 {
-"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;f8f628846ebac2119c3e7cf1a06f98d3",
+"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;739d465ffad08cb3139928b263f8074b",
 //"spider": "https://halflife.coding.net/p/index/d/index/git/raw/master/rule/main_spider.txt;md5;739d465ffad08cb3139928b263f8074b",
 "sites":[
 {"key":"2345_spider","name":"2345影视(官源)","type":3,"api":"csp_YS2345","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/2345.json"},
