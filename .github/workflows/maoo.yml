@@ -20,7 +20,7 @@ jobs:
           cd new
           curl -sLO https://raw.githubusercontent.com/YuanHsing/freed/master/maoo.json
           curl -sLO https://raw.githubusercontent.com/YuanHsing/freed/master/maoo2.json
-          spiders=$(grep '"spider"' maoo.json |sed /\/\/\"/d |cut -d\" -f4)
+          spiders=$(grep '"spider"' maoo.json |sed '/\/\/"/d' |cut -d\" -f4)
           for s in $spiders; do
             #filename=$(basename ${s} |cut -d\; -f1 |cut -d\? -f1)
             filename=$(basename ${s} |sed 's#\..*#.txt#')
