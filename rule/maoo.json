@@ -35,7 +35,8 @@
 {"key":"csp_xpath_saohuotv","name":"骚火电影(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/xpath/saohuotv2.json"},
 {"key":"csp_xpath_subb","name":"素白白影视(XP)(不能播改EXO)","type":3,"api":"csp_XPathSubb","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/xpath/subaibai.json"},
 {"key":"csp_xpath_dm84","name":"动漫巴士(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/xpath/dm84.json"},
-{"key":"csp_xpath_age","name":"AGE动漫(XP)","type":3,"api":"csp_XPathAge","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/xpath/agefans.json"},
+//{"key":"csp_xpath_age","name":"AGE动漫(XP)","type":3,"api":"csp_XPathAge","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/agefans.json"},
+{"key":"csp_xpath_age","name":"AGE动漫(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/agefans.json"},
 {"key":"csp_xpath_94sm","name":"94神马(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/94sm.json"},
 {"key":"csp_xpath_jpys","name":"极品(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/jpys.json"},
 {"key":"csp_yinghua","name":"樱花动漫(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/yinghua.json"},
@@ -562,7 +563,4 @@
 "cdnjs.hnfenxun.com",
 "cms.qdwght.com"
 ]
-// 更新至猫影视TV 2.0.8 才能使用底下官方配置接口
-// 官方维护 配置接口1 https://c1n.cn/cat
-// 官方维护 配置接口2 http://gg.gg/898900
 }
