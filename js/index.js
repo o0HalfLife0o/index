@@ -119,7 +119,6 @@ var NewTab = {
 NewTab.init();
 //切换背景图
 function changeImg() {
-    var rand=Math.round(Math.random()*8+1);
-    var currentImage = "https://bing.ioliu.cn/v1?w=1920&h=1080&d="+rand; 
+    var currentImage = "https://bing.ioliu.cn/v1/rand?w=1920&h=1080"; 
     NewTab.setAndSave(currentImage);
 }
