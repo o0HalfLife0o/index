@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>我的导航</title>
-	<link rel="shortcut icon" href="img/favicon.ico"  type="image/x-icon"/>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/navbar.css" rel="stylesheet" />
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@1.11.3/dist/jquery.min.js"></script>	
-</head>
-<body>
-    <div id="Y_nav" class="nav">
-        <ul class="nav-list">
-            <li class="item"><a href="./" target="_blank">我的导航</a></li>
-            <li class="item"><a target="_blank" href="https://sign.ming92.cf">百度签到</a></li>
-        </ul>
-    </div>
-	<div class="nav-icons">
-		<ul>
-		    <li data-type="web"   class="web current"><a >网页</a></li>
-			<li data-type="music" class="music"><a >音乐</a></li>
-			<li data-type="image" class="image"><a >图像</a></li>
-			<li data-type="news"  class="news"><a >新闻</a></li>
-			<li data-type="video" class="video"><a >视频</a></li>
-			<li data-type="map"   class="map"><a >地图</a></li>
-			<li data-type="forum" class="bbs"><a >论坛</a></li>
-		</ul>
-	</div>
-	<div class="input-group">
-		<span class="input-group-btn">
-			<button type="button" class="btn dropdown-toggle search" data-toggle="dropdown">
-				<span id="search-name">搜索</span><span class="caret"></span>
-			</button>
-			<ul id="search-list" class="dropdown-menu"></ul>
-		</span>
-		<input id="search-word" type="text" maxlength="100" autofocus="autofocus" baiduSug="2" class="form-control search">
-		<span class="input-group-btn">
-			<button id="search-btn" type="button" class="btn search-btn"><span>&nbsp;</span></button>
-		</span>
-	</div>
-	<div id="navs">
-		<div id="navtitle">
-			<span>我的导航</span>
-			<a id="nav_random" hidefocus="" title="切换背景图片" onclick="changeImg();" href="javascript:;">
-				<img width="16" height="16" src="img/change.png">
-			</a>
-		</div>
-		<table id="navtable"></table>
-	</div>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/inuyaksa/jquery.nicescroll@3.6.0/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.scrollup@2.4.1/dist/jquery.scrollUp.min.js"></script>
-	<script type="text/javascript" src="js/data.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/opensug.js"></script>
-	<script type="text/javascript" src="js/search.js"></script>
-	<script type="text/javascript">	$(document).ready(function() {
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>我的导航</title> 
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" /> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css" rel="stylesheet" /> 
+  <link href="css/style.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@1.11.3/dist/jquery.min.js"></script> 
+ </head> 
+ <body> 
+  <div class="nav-icons"> 
+   <ul> 
+    <li data-type="web" class="web current"><a>网页</a></li> 
+    <li data-type="music" class="music"><a>音乐</a></li> 
+    <li data-type="image" class="image"><a>图像</a></li> 
+    <li data-type="news" class="news"><a>新闻</a></li> 
+    <li data-type="video" class="video"><a>视频</a></li> 
+    <li data-type="map" class="map"><a>地图</a></li> 
+    <li data-type="forum" class="bbs"><a>论坛</a></li> 
+   </ul> 
+  </div> 
+  <div class="input-group"> 
+   <span class="input-group-btn"> <button type="button" class="btn dropdown-toggle search" data-toggle="dropdown"> <span id="search-name">搜索</span><span class="caret"></span> </button> 
+    <ul id="search-list" class="dropdown-menu"></ul> </span> 
+   <input id="search-word" type="text" maxlength="100" autofocus="autofocus" baidusug="2" class="form-control search" /> 
+   <span class="input-group-btn"> <button id="search-btn" type="button" class="btn search-btn"><span>&nbsp;</span></button> </span> 
+  </div> 
+  <div id="navs"> 
+   <div id="navtitle"> 
+    <span>我的导航</span> 
+    <a id="nav_random" hidefocus="" title="切换背景图片" onclick="changeImg();" href="javascript:;"> <img width="16" height="16" src="img/change.png" /> </a> 
+   </div> 
+   <table id="navtable"></table> 
+  </div> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/inuyaksa/jquery.nicescroll@3.6.0/jquery.nicescroll.min.js"></script> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.scrollup@2.4.1/dist/jquery.scrollUp.min.js"></script> 
+  <script type="text/javascript" src="js/data.js"></script> 
+  <script type="text/javascript" src="js/index.js"></script> 
+  <script type="text/javascript" src="js/opensug.js"></script> 
+  <script type="text/javascript" src="js/search.js"></script> 
+  <script type="text/javascript">	$(document).ready(function() {
 		var nicesx = $("body").niceScroll({touchbehavior:false,cursorcolor:"#0000FF",cursoropacitymax:0.6,cursorwidth:8});
 	});
 	$(function () {
@@ -231,6 +216,6 @@
 		search_engines_list = search_zh_cn;
 		changeSearchType();
 	});
-	</script>
-</body>
+	</script>   
+ </body>
 </html>
