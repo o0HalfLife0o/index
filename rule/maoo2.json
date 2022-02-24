@@ -1,7 +1,7 @@
 {
 "wallpaper": "https://picsum.photos/1280/720/?blur=10",
 //"spider":"https://github.com/catvod/CatVodTVSpider/blob/master/jar/custom_spider.jar?raw=true",
-"spider":"https://halflife.coding.net/p/index/d/index/git/raw/master/rule/custom_spider.txt;md5;1fabc61ae7ae847178f59fe3d0319c1a",
+"spider":"https://halflife.coding.net/p/index/d/index/git/raw/master/rule/custom_spider.txt;md5;39d92731df5e9a05846abbe3fb3bd99d",
 "sites":[
 
 {"key":"csp_appys_躺平影视","name":"躺平影视(M)","type":3,"api":"csp_AppYs","searchable":1,"quickSearch":0,"filterable":1,"ext":"http://www.lltpys.com/api.php/app/"},
