@@ -1,12 +1,12 @@
 {
 "wallpaper": "https://picsum.photos/1280/720/?blur=10",
-//"spider":"https://github.com/catvod/CatVodTVSpider/blob/master/jar/custom_spider.jar?raw=true",
-"spider":"https://halflife.coding.net/p/index/d/index/git/raw/master/rule/custom_spider.txt;md5;39d92731df5e9a05846abbe3fb3bd99d",
+"spider":"https://halflife.coding.net/p/index/d/index/git/raw/master/rule/custom_spider.txt;md5;4a29213da0b735850d4fd0b2bd766699",
+//"spider":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/custom_spider.txt",
 "sites":[
-{"key":"auete_spider","name":"Auete影视(SP)","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/auete.json"},
-{"key":"n0ys_spider","name":"90影视(SP)","type":3,"api":"csp_N0ys","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/90ys.json"},
 {"key":"cokemv_spider2","name":"Cokemv(SP)","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/cokemv.json"},
-{"key":"adys_spider","name":"爱迪影视(SP)","type":3,"api":"csp_Aidi","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/aidi.json"},
+//{"key":"auete_spider","name":"Auete影视(SP)","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/auete.json"},
+{"key":"n0ys_spider","name":"90影视(SP)","type":3,"api":"csp_N0ys","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/90ys.json"},
+//{"key":"adys_spider","name":"爱迪影视(SP)","type":3,"api":"csp_Aidi","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/aidi.json"},
 {"key":"enlienli_spider","name":"嗯哩嗯哩(SP)","type":3,"api":"csp_Enlienli","searchable":1,"quickSearch":1,"filterable":1},
 //{"key":"csp_YydsAli1","name":"YYDS阿里(SP)","type":3,"api":"csp_YydsAli1","searchable":1,"quickSearch":0,"filterable":0},
 
@@ -14,7 +14,7 @@
 {"key":"Jumi","name":"剧迷TV(XPMac)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/Jumi.json"},
 {"key":"csp_xpath_tvci","name":"大师兄(XPMac)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/tvci.json"},
 {"key":"Gimy","name":"GimyTV(XPMac)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/Gimy.json"},
-{"key":"唐人街","name":"唐人街(XPMac)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/Renjie.json"},
+//{"key":"唐人街","name":"唐人街(XPMac)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/Renjie.json"},
 {"key":"Djx","name":"瓜皮TV(XPMac)","type":3,"api":"csp_XPathFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/Djx.json"},
 
 {"key":"csp_xpath_lezhutv","name":"乐猪TV(XPMac)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/lezhutv.json"},
@@ -26,7 +26,7 @@
 {"key":"csp_xpath_Ole","name":"欧乐(XPMac)(播放器要改成Exo)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/olevod.json"},
 {"key":"csp_xpath_pianba","name":"片吧影院(XPMac)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/pianba.json"},
 //{"key":"csp_xpath_4kpianku","name":"4k片库网(XPMac)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/4kpianku.json"},
-{"key":"csp_xpath_cjt","name":"CJT影院(XP)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/cjtys.json"},
+//{"key":"csp_xpath_cjt","name":"CJT影院(XP)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/cjtys.json"},
 
 {"key":"csp_xpath_saohuotv","name":"骚火电影(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/saohuotv2.json"},
 {"key":"csp_xpath_subb","name":"素白白影视(XP)(不能播改EXO)","type":3,"api":"csp_XPathSubb","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/subaibai.json"},
@@ -34,7 +34,7 @@
 //{"key":"csp_xpath_age","name":"AGE动漫(XP)","type":3,"api":"csp_XPathAge","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/agefans.json"},
 {"key":"csp_xpath_age","name":"AGE动漫(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/agefans.json"},
 {"key":"csp_xpath_94sm","name":"94神马(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/94sm.json"},
-{"key":"csp_xpath_jpys","name":"极品(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/jpys.json"},
+//{"key":"csp_xpath_jpys","name":"极品(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/jpys.json"},
 {"key":"csp_yinghua","name":"樱花动漫(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/yinghua.json"},
 
 
@@ -250,6 +250,12 @@
 {"key":"csp_appysv2_小极TV","name":"小极TV(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":0,"filterable":1,"ext":"小极TV###https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/appysv2.json"},
 {"key":"csp_appysv2_小熊猫TV","name":"小熊猫TV(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":0,"filterable":1,"ext":"小熊猫TV###https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/appysv2.json"},
 {"key":"csp_appysv2_影视阁","name":"影视阁(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":0,"filterable":1,"ext":"影视阁###https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/appysv2.json"},
+//{"key":"csp_appysv2_nod影视","name":"nod影视(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":0,"filterable":1,"ext":"nod影视###https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/appysv2.json"},
+//{"key":"csp_appysv2_百淘影视","name":"百淘影视(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":0,"filterable":1,"ext":"百淘影视###https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/appysv2.json"},
+//{"key":"csp_appysv2_百淘影视2","name":"百淘影视2(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":0,"filterable":1,"ext":"百淘影视2###https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/appysv2.json"},
+{"key":"csp_appysv2_乐云影视","name":"乐云影视(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":0,"filterable":1,"ext":"乐云影视###https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/appysv2.json"},
+{"key":"csp_appysv2_猫咪TV","name":"猫咪TV(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":0,"filterable":1,"ext":"猫咪TV###https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/appysv2.json"},
+
 
 
 {"key":"九九美剧","name":"九九美剧","type":1,"api":"https://www.999meiju.tv/api.php/provide/vod/","playUrl":"","categories":[]},
