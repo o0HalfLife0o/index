@@ -1,6 +1,6 @@
 {
 "wallpaper":"https://picsum.photos/1280/720/?blur=10",
-"spider":"https://halflife.coding.net/p/index/d/index/git/raw/master/rule/custom_spider.txt;md5;4a29213da0b735850d4fd0b2bd766699",
+"spider":"https://halflife.coding.net/p/index/d/index/git/raw/master/rule/custom_spider.txt;md5;12f0676ab387fe20f324e4f2ea3f6722",
 //"spider":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/custom_spider.txt",
 "sites":[
 {"key":"csp_appysv2_星空影视","name":"星空影视(M2)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext":"星空影视###https://litecucumber.coding.net/p/cat/d/config/git/raw/master/appysv2.json"},
