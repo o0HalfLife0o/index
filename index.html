@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>我的导航</title> 
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" /> 
+  <link href="https://lib.baomitu.com/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /> 
+  <link href="css/style.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://lib.baomitu.com/jquery/1.11.3/jquery.min.js"></script> 
+ </head> 
+ <body> 
+  <div class="nav-icons"> 
+   <ul> 
+    <li data-type="web" class="web current"><a>网页</a></li> 
+    <li data-type="music" class="music"><a>音乐</a></li> 
+    <li data-type="image" class="image"><a>图像</a></li> 
+    <li data-type="news" class="news"><a>新闻</a></li> 
+    <li data-type="video" class="video"><a>视频</a></li> 
+    <li data-type="map" class="map"><a>地图</a></li> 
+    <li data-type="forum" class="bbs"><a>论坛</a></li> 
+   </ul> 
+  </div> 
+  <div class="input-group"> 
+   <span class="input-group-btn"> <button type="button" class="btn dropdown-toggle search" data-toggle="dropdown"> <span id="search-name">搜索</span><span class="caret"></span> </button> 
+    <ul id="search-list" class="dropdown-menu"></ul> </span> 
+   <input id="search-word" type="text" maxlength="100" autofocus="autofocus" baidusug="2" class="form-control search" /> 
+   <span class="input-group-btn"> <button id="search-btn" type="button" class="btn search-btn"><span>&nbsp;</span></button> </span> 
+  </div> 
+  <div id="navs"> 
+   <div id="navtitle"> 
+    <span>我的导航</span> 
+    <a id="nav_random" hidefocus="" title="切换背景图片" onclick="changeImg();" href="javascript:;"> <img width="16" height="16" src="img/change.png" /> </a> 
+   </div> 
+   <table id="navtable"></table> 
+  </div> 
+  <script type="text/javascript" src="https://lib.baomitu.com/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script> 
+  <script type="text/javascript" src="js/data.js"></script> 
+  <script type="text/javascript" src="js/index.js"></script> 
+  <script type="text/javascript" src="js/opensug.js"></script> 
+  <script type="text/javascript" src="js/search.js"></script> 
+  <script type="text/javascript">	$(document).ready(function() {
+    var nicesx = $("body").niceScroll({touchbehavior:false,cursorcolor:"#0000FF",cursoropacitymax:0.6,cursorwidth:8});
+  });
+  $(function () {
+    $.scrollUp({
+      'scrollName': 'scrollUp', // Element ID
+      'topDistance': '300', // Distance from top before showing element (px)
+      'topSpeed': 300, // Speed back to top (ms)
+      'animation': 'fade', // Fade, slide, none
+      'animationInSpeed': 200, // Animation in speed (ms)
+      'animationOutSpeed': 200, // Animation out speed (ms)
+      'scrollText': '', // Text for element
+      'activeOverlay': false // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    });
+  });
+  $(function(){
+    var nav = $(".nav-icons ul"),
+      list = $('ul#search-list'),
+      search_engine = $('span#search-name'),
+      search_word = $('input#search-word'),
+      search_btn = $('button#search-btn'),
+      links = $('.links-container .links');
+     var search_engines_list = -1;
+    nav.click(function(e){
+      e.preventDefault();
+      if (e.target.tagName == 'LI' && ! $(e.target).hasClass('current')){
+        nav.children('.current').removeClass('current');
+        $(e.target).addClass('current');
+        changeSearchType();
+        search_word.focus();
+      }
+    });
+    list.click(function(e){
+      e.preventDefault();
+      if (e.target.tagName == 'A'){
+        var target = $(e.target),
+          type = nav.children('.current').data('type');
+        search_engine.text(target.text());
+        search_engine.data("url",target.attr("href"));
+        mStorage.setItem(type + ".sel", target.parent().index());
+        search_word.focus();
+      }
+    });
+    search_word.keypress(function(e){
+      if (e.keyCode == 13){
+        e.stopPropagation();
+        e.preventDefault();
+        search_btn.click();
+      }
+    });
+    search_btn.click(function(e){
+      var url = search_engine.data("url");
+      url += encodeURIComponent(search_word.val());
+      window.location.href = url;
+    });
+    function parseJson(s) {
+      if (/^(?:[[\]{},:+\-.\w$\s\u0100-\uffff]|"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')+$/.test(s)){
+        return eval('0,' + s);
+      }
+    };
+    // fix localStorage
+    try {
+      var mStorage = window.localStorage;
+    } catch(e) {
+      if (typeof Components != 'undefined') {
+        var mStorage = (function() {
+          var Cc = Components.classes;
+          var Ci = Components.interfaces;
+          var prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefService);
+          function Prefs(str) {
+              this.pref = prefs.getBranch(str || '');
+          }
+          Prefs.prototype = {
+              getItem: function(name, defaultValue){
+                  var value = defaultValue;
+                  try {
+                      switch(this.pref.getPrefType(name)) {
+                          case Ci.nsIPrefBranch.PREF_STRING: value = this.pref.getComplexValue(name, Ci.nsISupportsString).data; break;
+                          case Ci.nsIPrefBranch.PREF_INT   : value = this.pref.getIntPref(name); break;
+                          case Ci.nsIPrefBranch.PREF_BOOL  : value = this.pref.getBoolPref(name); break;
+                      }
+                  } catch(e) { }
+                  return value;
+              },
+              setItem: function(name, value) {
+                  try {
+                      switch(typeof value) {
+                          case 'string' :
+                              var str = Cc["@mozilla.org/supports-string;1"].createInstance(Ci.nsISupportsString);
+                              str.data = value;
+                              this.pref.setComplexValue(name, Ci.nsISupportsString, str);
+                              break;
+                          case 'number' : this.pref.setIntPref(name, value); break;
+                          case 'boolean': this.pref.setBoolPref(name, value); break;
+                      }
+                  } catch(e) { }
+              },
+              removeItem: function(name) {
+                  try {
+                      this.pref.deleteBranch(name);
+                  } catch(e) { }
+              }
+          };
+          return new Prefs('extensions.myNewTab.');
+        })();
+      }
+    }
+    var toJson = function() {
+      function fe(s) {
+        return function(c) {
+          return s + c.charCodeAt(0).toString(16);
+        };
+      }
+      var es = [
+      /(?=["\\])/g, '\\',
+      /\n/g, '\\n',
+      /\r/g, '\\r',
+      /\t/g, '\\t',
+      /[\x00-\x0f]/g, fe('\\x0'),
+      /[\x10-\x1f\x7f-\xff]/g, fe('\\x'),
+      /[\u0100-\u0fff]/g, fe('\\u0'),
+      /[\u1000-\u4dff\u9fa6-\uffff]/g, fe('\\u')
+      ];
+      function encode_str(s) {
+        for (var i = 0; i < es.length; i += 2)
+          s = s.replace(es[i], es[i + 1]);
+        return '"' + s + '"';
+      }
+      function encode(a) {
+        var r, i;
+        switch (typeof a) {
+        case 'string':
+          return encode_str(a);
+        case 'number':
+        case 'boolean':
+          return a + '';
+        case 'object':
+          if (!a) return 'null';
+          r = [];
+          if (a instanceof Array) {
+            if (a.length == 1 && a[0] == null)
+              return '[null]';
+            for (i = 0; i < a.length; i++)
+              r[i] = a[i] == null ? '' : encode(a[i]);
+            return '[' + r.join() + ']';
+          }
+          else {
+            for (i in a)
+              r[r.length] = encode_str(i) + ':' + encode(a[i]);
+            return '{' + r.join() + '}';
+          }
+        case 'undefined':
+          return 'null';
+        default:
+          throw Error(typeof a);
+        }
+      }
+      return encode;
+    }();
+    function changeSearchType(){
+      var type = nav.children('.current').data('type');
+      list.children().remove();
+      for (var i in search_engines_list[type]){
+        var tpl = '<li><a href="#URL#">#NAME#</a></li>';
+        tpl = tpl.replace(/#URL#/g, search_engines_list[type][i]["url"]);
+        tpl = tpl.replace(/#NAME#/g, search_engines_list[type][i]["name"]);
+        list.append(tpl);
+      }
+      var sel = mStorage.getItem(type + ".sel");
+      if (sel === null || sel >= search_engines_list[type].length) sel = 0;
+      search_engine.text(search_engines_list[type][sel]["name"]);
+      search_engine.data("url",search_engines_list[type][sel]["url"]);
+    };
+    search_engines_list = search_zh_cn;
+    changeSearchType();
+  });
+  </script>   
+ </body>
+</html>
