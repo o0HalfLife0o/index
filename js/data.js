@@ -29,7 +29,7 @@ var Config = getMStr(function(){
 应用
 	Dreamcast, http://dreamcast2.ys168.com/, img/web/ys168.png
 	MEFCL, https://www.mefcl.com/, img/web/mefcl.png
-	谷歌翻译, https://translate.google.cn/, img/web/translate.jpg
+	谷歌翻译, https://translate.google.com/, img/web/translate.jpg
 	百度地图, https://map.baidu.com/, img/web/maps.ico
 	百度网盘, https://pan.baidu.com/, img/web/pan.ico
 综合
