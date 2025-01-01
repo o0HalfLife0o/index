@@ -1,7 +1,7 @@
 body {
     overflow:auto;
     background-color: #EDEDED;
-    background-image: url(https://bing.ming92.cf/);
+    background-image: url(/bing);
     background-repeat: no-repeat;
     background-size:cover; /* 如果屏幕没有铺满，请把auto改为你自己显示器分辨率 */
     font-family:'Microsoft YaHei';
@@ -289,12 +289,6 @@ button.search-btn:hover span {
 }
  #nav_random:hover {
     opacity:1;
-}
-/*天气*/
- #navtitle iframe {
-    float:right;
-    position:relative;
-    right: 3em;
 }
 /*设置导航地址间距*/
  #navtable {

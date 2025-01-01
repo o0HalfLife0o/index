@@ -1,0 +1,56 @@
+name: Deploy Pages
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  sprite:
+    name: Sprite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install dependencies
+        run: npm install spritesmith sharp ico-to-png --save-dev
+
+      - name: generate sprite
+        run: |
+          node .github/workflows/generate-sprite.js
+          rm -rf node_modules package.json package-lock.json
+
+      - name: Push to master
+        run: |
+          sed -i '/url =/d' ./.git/config
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name github-actions[bot]
+          git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git add --all
+          git commit -m "Update sprite"
+          git push origin master
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy:
+    name: Deploy
+    needs: sprite
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
